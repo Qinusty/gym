@@ -367,8 +367,8 @@ class CarRacing(gym.Env, EzPickle):
             VP_W = STATE_W
             VP_H = STATE_H
         else:
-            VP_W = 2 * WINDOW_W
-            VP_H = 2 * WINDOW_H
+            VP_W = WINDOW_W
+            VP_H = WINDOW_H
         gl.glViewport(0, 0, VP_W, VP_H)
         t.enable()
         self.render_road()
